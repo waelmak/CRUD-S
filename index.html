@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="crud"> <!-- A container div with the class "crud" that encompasses the entire content of the CRUD project. -->
+        
+        <div class="head"> <!-- A div containing the heading and subheading of the project.-->
+            <h2>crud-S</h2>
+            <p>product management system</p>
+        </div>
+
+        <div class="inputs"> <!-- A div containing input fields for the product details (title, price, taxes, ads, discount, count, category) and a "Create" button-->
+            <input placeholder="title" type="text" id="title"></input>
+            <div class="price"> 
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price"></input>
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes"></input>
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads"></input>
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount"></input>
+                <small id="total"></small>   
+            </div>
+            <input placeholder="count" type="number" id="count">
+            <input placeholder="category" type="text" id="category">
+            <button id="submit"> Create </button>
+        </div>
+
+        <div class="outputs"> <!--A div containing the search block and a table for displaying product information.-->
+            <div class="searchblock">
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
+                <div class="btnSearch">
+                    <button onclick="getSearchMode(this.id)" id="searchTitle">Search By Title</button>
+                    <button onclick="getSearchMode(this.id)"  id="searchCategory">Search By Category</button>
+                </div>
+            <div id="deleteAll">
+                
+            </div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>TOTAL</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+
+                    <tbody id="tbody">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button id="update">Update</button></td>
+                            <td><button id="delete">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

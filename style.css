@@ -1,0 +1,117 @@
+* {
+    margin: 0 px;
+    padding: 0 px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f7f7;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.crud {
+    width: 85%;  /*the 'crud' div takes only 85% of the body's width*/
+    margin: auto; /*Centers the .crud div horizontally by setting equal left and right margins*/
+    background: #fff;
+    padding: 20px; /*04 values of padding = 20 px */
+    border-radius: 8px; /* rounded border of the 'crud' div*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    height: 33px;
+    outline: none;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #333;
+}
+input#search {
+    margin-top: 10px;
+}
+
+input:focus {
+    background: #f0f0f0;
+    transform: scale(1.03);
+}
+
+.price input {
+    width: 22%;
+}
+
+#total {
+    background: #ff6b6b;
+    padding: 4px 2px;
+    border-radius: 4px;
+    margin-left: 1px;
+    color: #fff;
+}
+
+#total::before {
+    content: 'Total: ';
+}
+
+button {
+    width: 100%;
+    height: 31px;
+    cursor: pointer;
+    border: none;
+    background: #4285f4;
+    color: #fff;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+
+
+button:hover {
+    background: #357ae8;
+    letter-spacing: 1px;
+}
+
+.btnSearch {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+table {
+    width: 95%;
+    text-align: center;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: #f0f0f0;
+}
+
+#deleteAll {
+    
+    width : 70% ;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
